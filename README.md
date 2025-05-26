@@ -115,6 +115,7 @@ Result:
 Minimum cost: 80
 Optimal path: 0 -> 1 -> 3 -> 2 -> 0
 ```
+Assumption: The graph is complete, meaning there is a direct path between every pair of cities.
 
 ## Author
 | **NIM**  | **Nama**               | **Github** |
