@@ -68,6 +68,12 @@ For 4 cities (0,1,2,3):
 - mask = 5 (binary: 0101) → cities 0 and 2 visited
 - mask = 15 (binary: 1111) → all cities visited
 
+Each subproblem dp(pos, mask) represents the minimum cost to start at city pos having already visited the cities indicated by mask. The algorithm tries all possible next cities that haven’t been visited yet and picks the path with the lowest total cost.
+
+Memoization (@memo) stores the results of subproblems so they don’t have to be recomputed, greatly improving efficiency.
+
+Once all calculations are done, the optimal path is reconstructed by following the best next city choices stored in the memo.
+
 ## How to Use
 Run the main program to access the interactive menu:
 1. Solve TSP (manual input) - Enter your own distance matrix
