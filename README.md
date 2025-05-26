@@ -80,8 +80,8 @@ Run the main program to access the interactive menu:
 
 ## Test Case
 *Test Case 1*
-Distance Matrix:
 ```
+Distance Matrix:
      0   1   2
  0 [ 0  29  20]
  1 [29   0  15]
