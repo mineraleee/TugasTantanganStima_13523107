@@ -7,6 +7,7 @@ use Dynamic Programming</h2>
 - [Description](#description)
 - [Program Structure](#program-structure)
 - [Requirements & Installation](#requirements--installation)
+- [Algorithm](#algorithm)
 - [How to Use](#how-to-use)
 - [Test Case](#test-case)
 - [Author](#author)
@@ -52,6 +53,20 @@ Before running the program, follow these steps:
     cd src
     ruby main.rb
     ```
+
+## Algorithm
+The solver implements the Held-Karp algorithm, which uses dynamic programming with bitmasking to solve the TSP optimally. This approach significantly reduces the time complexity compared to brute force from O(n!) to O(n² × 2ⁿ).
+
+The algorithm breaks down the TSP into subproblems by considering:
+
+Current position: Which city we're currently at
+Visited cities: Which cities have been visited so far (represented as a bitmask)
+
+Bitmask Examples:
+For 4 cities (0,1,2,3):
+- mask = 1 (binary: 0001) → only city 0 visited
+- mask = 5 (binary: 0101) → cities 0 and 2 visited
+- mask = 15 (binary: 1111) → all cities visited
 
 ## How to Use
 Run the main program to access the interactive menu:
